@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamilarasan G | Portfolio - B.Tech AI & Data Science</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Official portfolio of Tamilarasan G, B.Tech student in Artificial Intelligence and Data Science at Panimalar Engineering College. Skilled in Java Full Stack, AI/ML, and Data Analytics.">
+    <meta name="keywords" content="Tamilarasan G, Tamilarasan, Portfolio, AI & DS, Panimalar Engineering College, Java Full Stack, Machine Learning, Data Analytics, Python, MySQL">
+    
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Tamilarasan G | Portfolio">
+    <meta property="og:description" content="Recruiter-friendly professional portfolio highlighting technical skills, projects, and certifications in AI, Data Science, and Java Full Stack.">
+    <meta property="og:image" content="image.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Theme Color styling for browser tabs -->
+    <meta name="theme-color" content="#1e3a8a">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
+        <h2>Loading Tamilarasan G's Portfolio...</h2>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header>
+        <a href="#home" class="logo">TAMILARASAN <span>G</span></a>
+        
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <!-- Moon SVG for light theme (displays when in light theme) -->
+                <svg class="moon-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <!-- Sun SVG for dark theme (displays when in dark theme) -->
+                <svg class="sun-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
+            <!-- Mobile Menu Burger Button -->
+            <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu">
+                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-grid container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">B.Tech AI & Data Science</div>
+                <h1>Hi, I'm <span style="color: var(--accent);">Tamilarasan G</span></h1>
+                <div class="typewriter-wrapper">
+                    I am a <span class="typewriter-text" id="typewriter"></span>
+                </div>
+                <p class="hero-desc">
+                    Motivated undergraduate student at Panimalar Engineering College, Chennai. Enthusiastic about data analytics, artificial intelligence, and Java Full Stack development. Seeking opportunities to build production-grade systems and deliver value with software engineering.
+                </p>
+                <div class="hero-actions">
+                    <a href="tamilarasan 1 gt .pdf  (1).pdf" target="_blank" class="btn btn-primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" style="margin-right:4px;"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                        View Resume
+                    </a>
+                    <a href="tamilarasan 1 gt .pdf  (1).pdf" download="Tamilarasan_G_Resume.pdf" class="btn btn-secondary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" style="margin-right:4px;"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-accent">Contact Me</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container reveal">
+                <div class="image-glow"></div>
+                <div class="hero-image-wrapper">
+                    <img src="image.png" alt="Tamilarasan G" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="section-header reveal">
+            <h2>About Me</h2>
+            <p>A look into my professional background and motivations</p>
+        </div>
+        
+        <div class="about-grid container">
+            <div class="about-img-wrapper reveal">
+                <img src="image.png" alt="Tamilarasan G Profile" class="about-img">
+            </div>
+            
+            <div class="about-content reveal">
+                <h3>My Objective & Aspirations</h3>
+                <p>
+                    I am currently in my 3rd year pursuing a Bachelor of Technology in Artificial Intelligence and Data Science at Panimalar Engineering College. My academic journey has ignited a deep interest in data pipelines, predictive models, and full-stack software architectures.
+                </p>
+                <p>
+                    I am actively refining my proficiency in core programming languages like Python and Java. Alongside learning Object-Oriented methodologies, I enjoy tackling problems on databases using MySQL, and constructing modern visual applications using JavaScript frameworks. My ultimate goal is to work on software engineering tasks where AI and web technology meet.
+                </p>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-num">15+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">2</div>
+                        <div class="stat-label">Completed Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">3rd</div>
+                        <div class="stat-label">Year B.Tech AI & DS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="education">
+        <div class="section-header reveal">
+            <h2>Education</h2>
+            <p>My academic foundation and educational timeline</p>
+        </div>
+        
+        <div class="timeline container reveal">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2023 - 2027</span>
+                    <h3 class="timeline-title">B.Tech - Artificial Intelligence and Data Science</h3>
+                    <h4 class="timeline-subtitle">Panimalar Engineering College</h4>
+                    <p class="timeline-desc">
+                        A rigorous undergraduate degree focused on core computer science subjects along with specialization in artificial intelligence methodologies, machine learning, data engineering, statistical analysis, and software development practices.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Graduated 2023</span>
+                    <h3 class="timeline-title">High School - Biomaths</h3>
+                    <h4 class="timeline-subtitle">Vanni Matriculation Higher Secondary School</h4>
+                    <p class="timeline-desc">
+                        Completed secondary education with specialization in Mathematics, Physics, Chemistry, and Biology. Laid a strong foundation in problem-solving and analytical reasoning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <h2>Technical Skills</h2>
+            <p>Tools, languages, and technologies I work with</p>
+        </div>
+        
+        <div class="skills-grid container reveal">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3>Languages</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Java (OOP)</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">HTML5 / CSS3</div>
+                    <div class="skill-tag">JavaScript</div>
+                </div>
+            </div>
+
+            <!-- Frontend Development -->
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4zM14 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2v-4z"></path></svg>
+                    </div>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-tag">HTML</div>
+                    <div class="skill-tag">CSS Grid/Flexbox</div>
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">UI/UX Design</div>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 012-2h10a2 2 0 012 2m-14 0a2 2 0 002 2h10a2 2 0 002-2M7 7h10M7 17h10"></path></svg>
+                    </div>
+                    <h3>Backend</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-tag">Java JDBC</div>
+                    <div class="skill-tag">Core Java</div>
+                    <div class="skill-tag">OOP Concepts</div>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg>
+                    </div>
+                    <h3>Databases</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">Database Management</div>
+                </div>
+            </div>
+
+            <!-- Tools & Developer Platforms -->
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3>Developer Tools</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-tag">VS Code</div>
+                    <div class="skill-tag">Jupyter Notebook</div>
+                    <div class="skill-tag">Git / GitHub</div>
+                    <div class="skill-tag">Eclipse IDE</div>
+                </div>
+            </div>
+
+            <!-- Operating Systems -->
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3>OS Platforms</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-tag">macOS</div>
+                    <div class="skill-tag">Windows</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <h2>Projects</h2>
+            <p>Software and engineering solutions I have built</p>
+        </div>
+        
+        <div class="projects-grid container reveal">
+            <!-- Project 1: Voice Control Car -->
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <div class="project-img-placeholder">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <span>Voice Control Car</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Voice Control Car</h3>
+                    <p class="project-desc">
+                        Developed an innovative robotics prototype of a voice-controlled car using speech recognition engines. The system interprets spoken commands in real-time, executing corresponding robotic movements with low latency.
+                    </p>
+                    <div class="project-features">
+                        <div class="project-feature-item">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Real-time speech recognition matching
+                        </div>
+                        <div class="project-feature-item">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Hardware-software integration overlay
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="project-tech-badge">Speech API</span>
+                        <span class="project-tech-badge">Python</span>
+                        <span class="project-tech-badge">Embedded Systems</span>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub Code</a>
+                    <button class="btn btn-primary" disabled>Live Demo (Placeholder)</button>
+                </div>
+            </div>
+
+            <!-- Project 2: Bus Ticket Reservation System -->
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <div class="project-img-placeholder">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                        <span>Ticket Reservation System</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Bus Ticket Reservation System</h3>
+                    <p class="project-desc">
+                        Built a robust backend console-based system using Java for transaction flows. Implemented JDBC mapping to connect the Java backend directly to a MySQL database to securely store, retrieve, update, and manage bookings and schedules.
+                    </p>
+                    <div class="project-features">
+                        <div class="project-feature-item">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            ACID compliant database transactions
+                        </div>
+                        <div class="project-feature-item">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Dynamic seat status allocation algorithms
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="project-tech-badge">Java (OOP)</span>
+                        <span class="project-tech-badge">JDBC API</span>
+                        <span class="project-tech-badge">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub Code</a>
+                    <button class="btn btn-primary" disabled>Live Demo (Placeholder)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header reveal">
+            <h2>Work Experience & Training</h2>
+            <p>My technical growth in industry simulation environments and specialized coding programs</p>
+        </div>
+        
+        <div class="timeline container reveal">
+            <!-- InternPe AI/ML Internship -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Aug 2025</span>
+                    <h3 class="timeline-title">Artificial Intelligence & Machine Learning Intern</h3>
+                    <h4 class="timeline-subtitle">InternPe</h4>
+                    <p class="timeline-desc">
+                        Applied supervised and unsupervised learning algorithms to predictive challenges using Jupyter Notebooks. Scaled capabilities in standard data structures, pandas, and scikit-learn.
+                        <br><br>
+                        <strong>Key Achievement:</strong> Completed all curriculum challenges ahead of schedule and was awarded an official completion certificate (see certs below).
+                    </p>
+                </div>
+            </div>
+            
+            <!-- QSpiders Training -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Ongoing (100-Day Program)</span>
+                    <h3 class="timeline-title">Java Software Engineer Trainee</h3>
+                    <h4 class="timeline-subtitle">QSpiders / (Test Yantra)</h4>
+                    <p class="timeline-desc">
+                        Completed the initial 50-day phase of a structured 100-day Java training track. Built solid competencies in Core Java syntax, Object-Oriented principles, collections, and polymorphism. The ongoing second phase centers on advanced configurations and JDBC system architectures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="section-header reveal">
+            <h2>Certifications & Industrial Visits</h2>
+            <p>Interactive gallery of achievements, online course credentials, and industrial visits</p>
+        </div>
+        
+        <!-- Gallery Filter Navigation -->
+        <div class="gallery-filter container reveal">
+            <button class="filter-btn active" data-filter="all">All Credits</button>
+            <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+            <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+            <button class="filter-btn" data-filter="experience">Internships & Visits</button>
+            <button class="filter-btn" data-filter="general">Other Credentials</button>
+        </div>
+        
+        <!-- Certification Grid Gallery -->
+        <div class="cert-grid container reveal">
+            
+            <!-- 1. Oracle Generative AI -->
+            <div class="cert-card" data-category="ai-ml" data-type="pdf" data-path="Oracle .pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>Oracle Cloud GenAI</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">OCI 2024 Generative AI Certified Professional</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Oracle
+                    </div>
+                    <div class="cert-date">Issued: July 17, 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="Oracle .pdf" download="Oracle_Generative_AI_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+            <!-- 2. Infosys AI Foundation -->
+            <div class="cert-card" data-category="ai-ml" data-type="image" data-path="Infosys 3.jpg">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="Infosys 3.jpg" alt="Infosys AI Foundation Certification" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Artificial Intelligence Foundation Certification</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Infosys Springboard
+                    </div>
+                    <div class="cert-date">Issued: July 16, 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="Infosys 3.jpg" download="Infosys_AI_Foundation_Certificate.jpg">Download</a>
+                </div>
+            </div>
+
+            <!-- 3. Infosys Intro to AI -->
+            <div class="cert-card" data-category="ai-ml" data-type="image" data-path="Infosys 1.jpg">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="Infosys 1.jpg" alt="Infosys Intro to AI" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Introduction to Artificial Intelligence</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Infosys Springboard
+                    </div>
+                    <div class="cert-date">Issued: July 14, 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="Infosys 1.jpg" download="Infosys_Introduction_AI_Certificate.jpg">Download</a>
+                </div>
+            </div>
+
+            <!-- 4. Infosys NLP -->
+            <div class="cert-card" data-category="ai-ml" data-type="pdf" data-path="infosys 1.pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>Infosys NLP Course</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Introduction to Natural Language Processing</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Infosys Springboard
+                    </div>
+                    <div class="cert-date">Issued: July 15, 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="infosys 1.pdf" download="Infosys_NLP_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+            <!-- 5. Infosys Deep Learning -->
+            <div class="cert-card" data-category="ai-ml" data-type="pdf" data-path="Infosys 2.pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>Infosys DL Course</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Introduction to Deep Learning</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Infosys Springboard
+                    </div>
+                    <div class="cert-date">Issued: July 15, 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="Infosys 2.pdf" download="Infosys_Deep_Learning_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+            <!-- 6. Forage Data Analytics (Tata) -->
+            <div class="cert-card" data-category="data-analytics" data-type="pdf" data-path="data analysis job.pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>Forage Tata GenAI</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">GenAI Powered Data Analytics Job Simulation</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Forage (Tata Group)
+                    </div>
+                    <div class="cert-date">Issued: August 7, 2025</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="data analysis job.pdf" download="Forage_Tata_Data_Analytics_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+            <!-- 7. Arkway Power BI Dashboard -->
+            <div class="cert-card" data-category="data-analytics" data-type="image" data-path="weriben .png">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="weriben .png" alt="Arkway Power BI Session" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Introductory Session: Live Dashboard Building in Power BI</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Arkway Education Services
+                    </div>
+                    <div class="cert-date">Issued: May 29, 2025</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="weriben .png" download="Arkway_PowerBI_Dashboard_Certificate.png">Download</a>
+                </div>
+            </div>
+
+            <!-- 8. Great Learning Power BI -->
+            <div class="cert-card" data-category="data-analytics" data-type="pdf" data-path="power BI for beginners .pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>Great Learning Power BI</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Power BI for Beginners</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Great Learning
+                    </div>
+                    <div class="cert-date">Issued: June 22, 2025</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="power BI for beginners .pdf" download="Great_Learning_PowerBI_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+            <!-- 9. InternPe AI/ML Certificate -->
+            <div class="cert-card" data-category="experience" data-type="image" data-path="TAMILARASAN G (1) (1).png">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="TAMILARASAN G (1) (1).png" alt="InternPe AI/ML Internship Completion" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">AI/ML Internship Completion Certificate</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        InternPe
+                    </div>
+                    <div class="cert-date">Duration: August 1 - 30, 2025</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="TAMILARASAN G (1) (1).png" download="InternPe_AIML_Internship_Certificate.png">Download</a>
+                </div>
+            </div>
+
+            <!-- 10. Redback Industrial Visit -->
+            <div class="cert-card" data-category="experience" data-type="image" data-path="IV.jpg">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="IV.jpg" alt="Redback Industrial Visit Certificate" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Certificate of Industrial Visit</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Redback IT Solutions
+                    </div>
+                    <div class="cert-date">Date: July 12, 2025</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="IV.jpg" download="Redback_Industrial_Visit_Certificate.jpg">Download</a>
+                </div>
+            </div>
+
+            <!-- 11. NetworkGeek Industrial Visit -->
+            <div class="cert-card" data-category="experience" data-type="image" data-path="IV.png">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="IV.png" alt="NetworkGeek Networking Session Certificate" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Industrial Visit & Session on 'Basics of Computer Networking'</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        NetworkGeek
+                    </div>
+                    <div class="cert-date">Date: July 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="IV.png" download="NetworkGeek_Industrial_Visit_Certificate.png">Download</a>
+                </div>
+            </div>
+
+            <!-- 12. Great Learning UI/UX -->
+            <div class="cert-card" data-category="general" data-type="image" data-path="Great learning .jpg">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="Great learning .jpg" alt="Great Learning UI UX Certificate" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">UI / UX for Beginners</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Great Learning Academy
+                    </div>
+                    <div class="cert-date">Date: July 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="Great learning .jpg" download="Great_Learning_UIUX_Certificate.jpg">Download</a>
+                </div>
+            </div>
+
+            <!-- 13. NASSCOM Cybersecurity -->
+            <div class="cert-card" data-category="general" data-type="pdf" data-path="NASCOM .pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>NASSCOM CyberSec</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Cybersecurity Analysis & Design</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        NASSCOM
+                    </div>
+                    <div class="cert-date">Date: July 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="NASCOM .pdf" download="NASSCOM_Cybersecurity_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+            <!-- 14. Viksit Bharat Quiz -->
+            <div class="cert-card" data-category="general" data-type="image" data-path="certificate 🇮🇳.jpg">
+                <div class="cert-thumbnail-wrapper">
+                    <img src="certificate 🇮🇳.jpg" alt="Viksit Bharat Quiz Participation Certificate" class="cert-thumbnail">
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Online Quiz on Viksit Bharat Young Leaders Dialogue</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        MYBharat (Govt of India)
+                    </div>
+                    <div class="cert-date">Date: 10 October 2025</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="certificate 🇮🇳.jpg" download="Viksit_Bharat_Quiz_Certificate.jpg">Download</a>
+                </div>
+            </div>
+
+            <!-- 15. Crypto Tokens -->
+            <div class="cert-card" data-category="general" data-type="pdf" data-path="VI.pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>Crypto Tokens Course</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Crypto Tokens Certificate</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Crypto Tokens Credential
+                    </div>
+                    <div class="cert-date">Date: July 22, 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="VI.pdf" download="Crypto_Tokens_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+            <!-- 16. Green Pledge -->
+            <div class="cert-card" data-category="general" data-type="pdf" data-path="certificate (1).pdf">
+                <div class="cert-thumbnail-wrapper">
+                    <div class="cert-icon-fallback">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        <span>Green Pledge</span>
+                    </div>
+                    <div class="cert-hover-overlay">
+                        <span class="cert-view-btn">👁️</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <h3 class="cert-title">Green Champion Environmental Pledge</h3>
+                    <div class="cert-issuer">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                        Government Initiative
+                    </div>
+                    <div class="cert-date">Year: 2024</div>
+                </div>
+                <div class="cert-actions">
+                    <button class="view-trigger">Preview</button>
+                    <a href="certificate (1).pdf" download="Green_Pledge_Certificate.pdf">Download</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Certificate Previews -->
+    <div class="modal" id="cert-modal" aria-hidden="true" role="dialog">
+        <button class="modal-close" id="modal-close" aria-label="Close preview">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <div class="modal-content-wrapper">
+            <div id="modal-content"></div>
+            <div class="modal-caption" id="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <h2>Contact Me</h2>
+            <p>Get in touch for internships, placement opportunities, or collaborations</p>
+        </div>
+        
+        <div class="contact-grid container reveal">
+            <!-- Contact info channels -->
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p>Feel free to reach out to me through any of the channels below. I'm always open to discussing new opportunities, projects, or internships.</p>
+                
+                <div class="contact-info-list">
+                    <!-- Email -->
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:tamilarasanai551@gmail.com">tamilarasanai551@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+918610003803">+91 8610003803</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Chennai, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social media buttons -->
+                <div class="contact-socials">
+                    <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
+                        <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub Profile">
+                        <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Contact form card -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group-grid">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Internship Opportunity" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Hi Tamilarasan, I would like to discuss..." required></textarea>
+                    </div>
+                    
+                    <!-- Form Submission Status Alert -->
+                    <div class="form-status" id="form-status"></div>
+                    
+                    <button type="submit" class="btn btn-accent" style="width: 100%; border-radius: 12px; padding: 14px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-logo">TAMILARASAN <span>G</span></h3>
+                <p class="footer-copy">&copy; 2026 Tamilarasan G. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-right">
+                <p style="font-size: 0.9rem; color: var(--text-tertiary);">B.Tech Artificial Intelligence & Data Science</p>
+                <p style="font-size: 0.9rem; color: var(--text-tertiary);">Chennai, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
