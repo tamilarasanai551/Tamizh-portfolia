@@ -129,9 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const words = [
         "B.Tech AI & Data Science Student",
-        "Java Full Stack Developer",
-        "AI/ML Developer",
-        "Data Analyst Specialist"
+        "Java Full Stack Developer"
     ];
     
     let part;
